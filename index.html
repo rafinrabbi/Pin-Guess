@@ -69,7 +69,7 @@
             "Your PIN has been generated. Guess the PIN :p";
             mainPin =Math.floor(1000 + Math.random() * 9000);
             pinStep=Math.log2(mainPin);
-            pinStep=Math.ceil(pinStep);
+            pinStep=Math.ceil(pinStep)+1;
             document.getElementById("try-left").innerText=pinStep;
             console.log(mainPin);
         })
