@@ -111,6 +111,7 @@
             const pin = document.getElementById("pin-box").value;
             const input = document.getElementById("display-input").value;
             if(mainPin == input){
+                document.getElementById("unmatch").style.display="none";
                 document.getElementById("match").style.display="block";
             }
             else{
